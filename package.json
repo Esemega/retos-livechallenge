@@ -1,0 +1,22 @@
+{
+  "name": "retos-livechallenge",
+  "version": "1.0.0",
+  "description": "Live challenge from Web Reactiva Premium academy",
+  "main": "JSON_tree/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Esemega/retos-livechallenge.git"
+  },
+  "author": "Sonia Garcia Alcaraz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Esemega/retos-livechallenge/issues"
+  },
+  "homepage": "https://github.com/Esemega/retos-livechallenge#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}

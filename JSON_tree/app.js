@@ -7,17 +7,19 @@ async function fetchData() {
 
 const convertJsonToHtml = (tree, indent = 'tab') => {
   const childTag = 'li';
-  const indentString = indent === 'space' ? ' ' : "\t"
-  
+  const indentString = indent.includes('space') ? ' '.repeat(indent.slice(5)) : "\t";
+  const getClass = element => element.class ? ` class='${element.class}'` : '';
+
   return `<${tree.tag}>
-${indentString}${tree.children.map(child => `<${childTag}>${child.text}</${childTag}>`).join(`\n${indentString}`)}
+${indentString}${tree.children.map(child => `<${childTag}${getClass(child)}>${child.text}</${childTag}>`).join(`\n${indentString}`)}
 </${tree.tag}>`
 }
 
 fetchData()
-  .then(tree => {
-    console.log(tree)
-    console.log(convertJsonToHtml(tree));
+  .then( data => {    
+    console.log('complexTree', data.complexTree)
+    console.log(convertJsonToHtml(data.complexTree));
+
 })
 
 module.exports = convertJsonToHtml;

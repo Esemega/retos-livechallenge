@@ -1,14 +1,58 @@
 {
-    "tag": "ul",
-    "children": [
-        {
-        "text": "Primer elemento"
-        },
-        {
-        "text": "Cáspita, otro elemento"
-        },
-        {
-        "text": "El último"
-        }
-    ]
+    "tree": {
+        "tag": "ul",
+        "children": [
+            {
+            "text": "Primer elemento"
+            },
+            {
+            "text": "Cáspita, otro elemento"
+            },
+            {
+            "text": "El último"
+            }
+        ]
+    },
+    "treeWithClass": {
+        "tag": "ul",
+        "children": [
+            {
+            "text": "Primer elemento"
+            },
+            {
+            "text": "Cáspita, otro elemento",
+            "class": "caper"
+            },
+            {
+            "text": "El último"
+            }
+        ]
+    },
+    "complexTree" : {
+        "tag": "ul",
+        "children": [
+          {
+            "text": "Primer elemento"
+          },
+          {
+            "text": "Cáspita, otro elemento",
+            "children": [
+              {
+                "tag": "ul",
+                "children": [
+                  {
+                    "text": "Primer heredero del cáspita"
+                  },
+                  {
+                    "text": "Último heredero del cáspita"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+              "text": "El último"
+          }
+        ]
+    }
 }
