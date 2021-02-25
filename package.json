@@ -2,7 +2,7 @@
   "name": "retos-livechallenge",
   "version": "1.0.0",
   "description": "Live challenge from Web Reactiva Premium academy",
-  "main": "JSON_tree/index.js",
+  "main": "challenge_1/index.js",
   "scripts": {
     "test": "jest"
   },
