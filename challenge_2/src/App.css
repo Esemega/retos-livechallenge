@@ -2,7 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 body {
@@ -11,14 +12,12 @@ body {
   background: linear-gradient(to right, #93EDC7, #1CD8D2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.container {
+.App {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
-  font-size: 10em;
-  color: #292929;
-  /* color: #70284a; */
+  flex-direction: column;
+  /* border: 1px solid black; */
 }
