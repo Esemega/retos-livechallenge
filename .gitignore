@@ -2,3 +2,5 @@ contador
 PYTHON
 .env
 node_modules
+.cache
+dist
